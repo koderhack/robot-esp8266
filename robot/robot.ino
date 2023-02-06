@@ -15,8 +15,8 @@ int rightMotorBackward = 13;  /* GPIO13(D7) -> IN2  */
 int rightMotorENA = 14; /* GPIO14(D5) -> Motor-A Enable */
 int leftMotorENB = 12;  /* GPIO12(D6) -> Motor-B Enable */
 
-const char ssid[] = "FunBox3-F9EA";       // your network SSID (name)
-const char password[] = "23PMUFRSAL4Y";  // your network key
+const char ssid[] = "YOUR WIFI NAME";       // your network SSID (name)
+const char password[] = "YOUR WIFI PASSWORD";  // your network key
 char Data;
  //For ESP8266 and ESP32 boards
 
