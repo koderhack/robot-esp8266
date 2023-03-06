@@ -7,5 +7,5 @@ A simple robot made with the esp8266 and L298N module
 2. download this code 
 3. change wifi name and password 
 4. Install code using the button on auduino ide 
-5. Go to the ip given in serial moinitor by an esp 
+5. Go to the ip given in serial monitor by an esp 
 6. Be happy! 
