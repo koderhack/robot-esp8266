@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Koder - Aspiring Game Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
+  <style>
+    .menu-btn {
+      display: block;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 30px;
+      z-index:3;
+    }
+    .menu-btn:hover {
+      background-color: #444;
+    }
+    #menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    #menu.show {
+      display: block;
+      position: absolute;
+      top: 6%;
+      
+    }
+    #menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #menu li {
+      padding: 5px;
+    }
+    #menu li a {
+      color: #fff;
+    }
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Koder</a></h1>
+    <a class="menu-btn" onclick="toggleMenu()">Menu</a>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://koder123456.itch.io/">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>Welcome to Koder's website</h2>
+      <img src="koder.jpg" alt="Koder">
+      <p>Koder is an aspiring game developer who is passionate about creating unique and exciting games.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </section>
+
+
+
+<section class="latest-games">
+  <h2>Latest Games</h2>
+  <div class="game-card">
+    <img src="game1.png" alt="Game 1">
+    <h3>Hamster Survival</h3>
+    <p>Survive as the hamster and prepare to get out of the home</p>
+    <a href="https://koder123456.itch.io/hamstersurvival" class="btn">See now 👀</a>
+  </div>
+  
+  <div class="game-card">
+    <img src="game2.jpg" alt="Game 2">
+    <h3>Hamster Run</h3>
+    <p>Run with your hamster through apocalyptic world</p>
+    <a href="#" class="btn">Coming Soon 🆕</a>
+  </div>
+  
+  <div class="game-card">
+    <img src="game3.jpg" alt="Game 3">
+    <h3>Asteroid Rain</h3>
+    <p>Asteroid Rain is my first game in Unity.  It is about avoiding flying asteroids in space</p>
+    <a href="https://koder123456.itch.io/asteroid-rain" class="btn">Play Now 🎮</a>
+  </div>
+</section>
+<section class="other-projects">
+  <h2>Other Projects</h2>
+  <div class="game-card">
+    <img src="project1.jpg" alt="Game 1">
+    <h3>Esp8266 WiFi robot</h3>
+    <p>A simple robot made with the esp8266 and L298N module</p>
+    <a href="https://github.com/koderhack/robot-esp8266" class="btn">See how it works ⚙</a>
+  </div>
+  
+ 
+</section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Koder. All rights reserved</p>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Koder - Aspiring Game Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
+  <style>
+    .menu-btn {
+      display: block;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 30px;
+      z-index:3;
+    }
+    .menu-btn:hover {
+      background-color: #444;
+    }
+    #menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    #menu.show {
+      display: block;
+      position: absolute;
+      top: 6%;
+      
+    }
+    #menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #menu li {
+      padding: 5px;
+    }
+    #menu li a {
+      color: #fff;
+    }
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Koder</a></h1>
+    <a class="menu-btn" onclick="toggleMenu()">Menu</a>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://koder123456.itch.io/">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="socials">
+      <h2>Socials:</h2>
+      <a href="https://www.youtube.com/channel/UC37t0k39bcWRzAreu7bAkSQ" class="btn">Click to go to the Youtube📷</a>
+      <a href="https://vm.tiktok.com/ZMdopTWpS/" class="btn">Click to go to Tiktok📱</a>
+      <a href="https://twitter.com/Koder123456789" class="btn">Click to go to Twitter🐦</a>
+      <a href="https://discord.com/invite/twrMS8nUTZ" class="btn" > Click to go to Discord💻</a>
+       
+    </section>
+
+    <section class="private-contact">
+      <h2>Contact:</h2>
+    <p>Discord: Koder123456#0398</p>
+    <p>Email: koder1@interia.pl</p>
+       
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2023 Koder. All rights reserved</p>
+  </footer>
+  
+</body>
+</html>
